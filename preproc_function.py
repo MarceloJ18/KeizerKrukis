@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder
 
+# Function for enconding categorial variables
 def encode_categorical_variable(dataframe: pd.DataFrame, column_name: str, categories: list) -> None:
     '''
     Encodes a categorical variable in a pandas DataFrame using an ordinal encoder.
