@@ -2,7 +2,8 @@
 This .py file is to contain all the functions that were created
 in the execution of the EDA (automating graphic creation)
 '''
-
+import pandas as pd
+import matplotlib.pyplot as plt
 
 
 '''
@@ -29,8 +30,21 @@ def auto_pie(
         legend_title: str, 
         label_top: str, 
         label_bottom: str):
-    '''
     
+    '''
+    This function creates a Pie-Chart displaying
+    the percentage correspondent to every slice
+
+    Arguments:
+  - series(pd.DataFrame): more specifically the variable that
+will be analyzed.
+  - title(str): The title to display above the chart.
+  - legent_title(str): The title to display on top of the
+  legend
+  - label_top(str): the label of the category to be displayed on top
+  - label_bottom(str): the label of the category to be displayed in the bottom
+  **Note**: This function is only applicable for variables with
+            binary distribution
     
     '''
 
@@ -63,9 +77,21 @@ def auto_bar(series: pd.Series,
              x_axis_label: str,
              y_axis_label: str):
 
-        '''
-        
-        ''' 
+    '''
+    This function creates a Pie-Chart displaying
+    the percentage correspondent to every slice
+
+    Arguments:
+  - series(pd.DataFrame): more specifically the variable that
+will be analyzed.
+  - title(str): The title to display above the chart.
+  - x_axis_label(str): The label to be displayed on the x-axis
+  - y_axis_label(str): The label to be displayed on the y-axis
+
+  **Note**: This function is only applicable for variables with
+            binary distribution
+    
+    '''
 
 
     # Calculating the value counts for each unique value in the series
