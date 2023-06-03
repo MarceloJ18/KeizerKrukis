@@ -2,7 +2,8 @@
 This .py file is to contain all the functions that were created
 in the execution of the EDA (automating graphic creation)
 '''
-
+import pandas as pd
+import matplotlib as plt
 
 
 '''
